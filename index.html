@@ -9,7 +9,7 @@
   <link rel="canonical" href="https://rubyisdead.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="rubyisdead.com">
-  <meta property="og:title" content="Old Rails. New life.">
+  <meta property="og:title" content="Upgrade Rails. Keep shipping.">
   <meta property="og:description" content="$10,000 fixed-price Ruby on Rails upgrades and $100/hour support with Renat.">
   <meta property="og:url" content="https://rubyisdead.com/">
   <meta property="og:image" content="https://rubyisdead.com/assets/ruby-share.jpg">
@@ -19,6 +19,7 @@
   <link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
+  <script src="celebrate.js" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -44,10 +45,10 @@
         </div>
         <div class="hero-copy">
           <p class="eyebrow"><span class="dash" aria-hidden="true"></span> Ruby on Rails consulting</p>
-          <h1 id="headline">Old Rails.<br><em>New life.</em></h1>
-          <p class="hero-description">I’m Renat. I upgrade and support Ruby on Rails applications so your team can keep shipping on the codebase you already have.</p>
+          <h1 id="headline">Upgrade Rails.<br><em>Keep shipping.</em></h1>
+          <p class="hero-description">I’m Renat. I upgrade production Rails apps and help teams fix the bugs, slowdowns, and dependency problems that get in the way.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Discuss an upgrade <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#contact">Discuss your Rails app <span class="arrow" aria-hidden="true">↗</span></a>
             <a class="text-link" href="#services">View services <span class="arrow" aria-hidden="true">↓</span></a>
           </div>
         </div>
@@ -62,32 +63,34 @@
       </ul>
     </div>
 
-    <section class="wrap services" id="services" aria-labelledby="services-heading">
-      <p class="eyebrow"><span class="dash" aria-hidden="true"></span> Services</p>
-      <h2 id="services-heading">Two ways to <em>work together.</em></h2>
-      <div class="offers">
-        <article class="offer offer-upgrade" aria-labelledby="upgrade-heading">
-          <h3 id="upgrade-heading">Ruby on Rails upgrade</h3>
-          <p class="price">$10,000 <span>Fixed price</span></p>
-          <p>Move your app to an agreed, supported Ruby and Rails version. We define the scope before work starts.</p>
-          <ul class="offer-list" role="list">
-            <li>Ruby, Rails, and gem compatibility</li>
-            <li>Test suite and staging verification</li>
-            <li>Rollout plan and handoff notes</li>
-          </ul>
-          <a class="button button-dark" href="mailto:renat@aomega.co?subject=Ruby%20on%20Rails%20upgrade">Ask about an upgrade <span class="arrow" aria-hidden="true">↗</span></a>
-        </article>
-        <article class="offer offer-support" aria-labelledby="support-heading">
-          <h3 id="support-heading">Rails support</h3>
-          <p class="price">$100 <span>Per hour</span></p>
-          <p>Get experienced Rails help when production is misbehaving or your team needs another pair of eyes.</p>
-          <ul class="offer-list" role="list">
-            <li>Production debugging</li>
-            <li>Performance and reliability</li>
-            <li>Maintenance and code review</li>
-          </ul>
-          <a class="button button-outline" href="mailto:renat@aomega.co?subject=Ruby%20on%20Rails%20support">Ask about support <span class="arrow" aria-hidden="true">↗</span></a>
-        </article>
+    <section class="paper services" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="eyebrow"><span class="dash" aria-hidden="true"></span> Services</p>
+        <h2 id="services-heading">Rails help. <em>Clear pricing.</em></h2>
+        <div class="offers">
+          <article class="offer offer-upgrade" aria-labelledby="upgrade-heading">
+            <h3 id="upgrade-heading">Ruby on Rails upgrade</h3>
+            <p class="price">$10,000 <span>Fixed price</span></p>
+            <p>Get onto a supported Ruby and Rails stack. We agree on target versions, scope, and what to verify before work starts.</p>
+            <ul class="offer-list" role="list">
+              <li>Ruby, Rails, and gem compatibility</li>
+              <li>Test suite and staging verification</li>
+              <li>Rollout plan and handoff notes</li>
+            </ul>
+            <a class="button button-dark" href="mailto:renat@aomega.co?subject=Ruby%20on%20Rails%20upgrade">Ask about an upgrade <span class="arrow" aria-hidden="true">↗</span></a>
+          </article>
+          <article class="offer offer-support" aria-labelledby="support-heading">
+            <h3 id="support-heading">Rails support</h3>
+            <p class="price">$100 <span>Per hour</span></p>
+            <p>Unblock a release, track down a slow request, or get a second opinion on a stubborn Rails problem.</p>
+            <ul class="offer-list" role="list">
+              <li>Production debugging</li>
+              <li>Performance and reliability</li>
+              <li>Maintenance and code review</li>
+            </ul>
+            <a class="button button-outline" href="mailto:renat@aomega.co?subject=Ruby%20on%20Rails%20support">Ask about support <span class="arrow" aria-hidden="true">↗</span></a>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -96,7 +99,7 @@
         <div>
           <p class="eyebrow"><span class="dash" aria-hidden="true"></span> The upgrade process</p>
           <h2 id="process-heading">Small steps.<br><em>Safer upgrades.</em></h2>
-          <p class="process-summary">You work directly with me. I use my <code>ruby-update</code> skill to plan the work and keep changes small enough for your team to review.</p>
+          <p class="process-summary">I use my <code>ruby-update</code> skill to map version changes and keep the work in small, reviewable pull requests.</p>
         </div>
         <ol class="steps" role="list">
           <li>
@@ -112,14 +115,36 @@
             <div><h3>Verify and hand off</h3><p>Check critical flows in staging and give your team rollout and rollback notes for production.</p></div>
           </li>
         </ol>
+        <div class="release">
+          <div>
+            <h3>Ready to ship.</h3>
+            <p>Rollout plan in hand. Time to close those 37 browser tabs.</p>
+          </div>
+          <div class="release-mark" aria-hidden="true">
+            <span class="release-check">✓</span>
+            <span class="confetti"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="paper profile" aria-labelledby="profile-heading">
+      <div class="wrap profile-inner">
+        <img class="portrait" src="assets/renat.webp" alt="Renat in a baseball cap and amber sunglasses" width="768" height="960" loading="lazy" decoding="async">
+        <div>
+          <p class="eyebrow"><span class="dash" aria-hidden="true"></span> Independent Ruby on Rails consulting</p>
+          <h2 id="profile-heading">Hi, I’m <em>Renat.</em></h2>
+          <p>I work directly with your team, from the first look at your Gemfile to the rollout handoff. You’ll know what changed and how to maintain it.</p>
+          <p class="profile-aside">Ruby is dead? Somebody should tell your production logs.</p>
+        </div>
       </div>
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contact-heading">
       <div class="wrap contact-inner">
         <div>
-          <h2 id="contact-heading">Tell me about<br><em>your Rails app.</em></h2>
-          <p>Send me your Ruby and Rails versions, what’s getting in the way, and when you’d like to get started.</p>
+          <h2 id="contact-heading">What’s <em>stuck?</em></h2>
+          <p>Tell me what’s getting in the way and when you’d like to tackle it. If you know your Ruby and Rails versions, send those too.</p>
         </div>
         <a class="contact-link" href="mailto:renat@aomega.co?subject=Ruby%20on%20Rails%20consulting">
           renat@aomega.co <span class="arrow" aria-hidden="true">↗</span>
@@ -134,7 +159,7 @@
         <span class="brand-mark" aria-hidden="true"></span>
         <span>rubyisdead<span class="brand-domain">.com</span></span>
       </a>
-      <span>Independent Ruby on Rails consulting</span>
+      <a class="footer-credit" href="https://aomega.co">Made in Austin ☆ Texas</a>
     </div>
   </footer>
 </body>
